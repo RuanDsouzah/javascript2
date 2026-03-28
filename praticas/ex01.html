@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 01</title>
+</head>
+<body>
+    <h1>nacionalidades</h1>
+    qual é o seu nome ? : <input type="text" name="nome" id="nome"> <br>
+    de qual pais você é ? :<input type="text" name="txt1" id="txt1">
+    <input type="button" value="verificar" onclick="ver()">
+    <div id="res"></div>
+
+    <script>
+        var nome = document.getElementById('nome')
+        var pais = document.getElementById('txt1')
+        var res = document.getElementById('res')
+        function ver(){
+            var Nome = nome.value
+            var Pais = pais.value
+           if(Pais == 'brasil'){ res.innerText = `ola ${Nome}, você nasceu no ${Pais} e vc é brasileiro`
+           }else{
+            res.innerText = `ola ${Nome}, você nasceu no ${Pais} e você é estrangeiro`
+           }
+        }
+    </script>
+</body>
+</html>
